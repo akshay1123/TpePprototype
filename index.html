@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<style>
+img {
+	height: 100px;
+	width: 100px;
+}
+</style>
+<head>
+   <title>Prototype</title>
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script src="scripts/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="jquery-1.11.3.min.js"></script>
+   <script  type="text/javascript">
+   /*$(document).ready(function(){
+   	$("rest").click(function(){
+   		$("one").hide();
+   	});
+   });*/
+
+
+   		function showReview(num){
+   			if (num == 1){
+   				document.getElementById("one").innerHTML = "So i have been told that this is the ultimate lovers' spot, with its secluded positioning and hidden narrow corners, it'd make a perfect make-out joint. Though the loner that i am we went with a bunch of friends for a late, very late brunch.<br><br>While driving there for the first time, if you ain't using your GPS, chances are that you'd miss it. Even whilst following the GPS i had my doubts that the google-lady is misleading us for fun's sake.<br><br>Entering into this place and trying to find civilization would take you some time, have patience and don't wear high heels.<br><br>The ambiance and whole set up made me forget that i was in Hyderabad, we ordered some chicken burger, pizza and fries and certain non-alcoholic drinks. The food was quiet average and didn't really stood out. But guess what, the feel-good factor was plenty."
+   			}
+   			if (num == 2){
+   				document.getElementById("two").innerHTML = "Faad Faad Faad"
+   			}
+   		}
+   </script>
+
+</head>
+<body>
+<div class="container" style="background-color: #D6F5FF; top-margin:10px;">
+	<!--<div class="row">
+		<div class="col-md-1" style="font-size:2em;">
+			<p><img src="bootstrap/images/download2.png" 
+   class="img-circle" style="height:100px; width:100px"></p>
+		</div>
+		<div class="col-md-11" style="font-size:2em; background-color: #e0ffff;">
+			<p>Hello, world! Col2</p>
+		</div>
+	</div>-->
+	<table class="table table-hover">
+	<caption>Restaurants</caption>
+	<thread>
+		<tr>
+			<th class="images">Logo</th>
+			<th>Name</th>
+		</tr>
+	</thread>
+	
+	<tbody>
+	<tr onclick="showReview(1)">
+	
+	<td class="col-md-1"><img src="bootstrap/images/download2.png" class="img-circle" </td>
+	<td class="col-md-11" style="color:black; font-size:200%">Olive Bistro<br><small><p id="one" style="font-size:60%"></p></small></td>
+	
+	</tr>
+	
+	<tr onclick="showReview(2)">
+	
+	<td class="col-md-1"><img src="bootstrap/images/download1.png" class="img-circle" </td>
+	<td class="col-md-11" style="color:black; font-size:200%">Aunty Ke Bonde<br><small><p id="two" style="font-size:60%"></p></small></td>
+	
+	</tr>
+	</tbody>
+	</table>
+
+
+</div>
+
+</body>
+</html>
