@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+img {
+	height: 100px;
+	width: 100px;
+}
+a {
+	text-decoration: none;
+}
+</style>
+<head>
+   <title>Prototype</title>
+   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script src="scripts/jquery.min.js"></script>
+   <script src="bootstrap/js/bootstrap.min.js"></script>
+   <script src="jquery-1.11.3.min.js"></script>
+   <script  type="text/javascript">
+
+   		function review(){
+   			document.getElementById("one").innerHTML = "<b>Review 1: </b><br>The food here is not that good though ambience is fine. Service was on time.Overall the experience is fine."
+   			document.getElementById("two").innerHTML = "<b>Review 2: </b><br>The food here was awesome though ambience is the best. Service was on time.Overall the experience was great."
+   			document.getElementById("three").innerHTML = "<b>Review 3: </b><br>The food here is nice though ambience is nice. Service was on time.Overall the experience was nice.<br><button onclick='sort()'>Click to sort the above reviews</button>"
+   		}
+   		function sort(){
+   			document.getElementById("sort1").innerHTML = "<b>Review 2: [Our Rating: 3.9/5.0]</b><br>The food here was awesome though ambience is the best. Service was on time.Overall the experience was great."
+   			document.getElementById("sort2").innerHTML = "<b>Review 3: [Our Rating: 3.4/5.0]</b><br>The food here is nice though ambience is nice. Service was on time.Overall the experience was nice."
+   			document.getElementById("sort3").innerHTML = "<b>Review 1: [Our Rating: 3.0/5.0]</b><br>The food here is not that good though ambience is fine. Service was on time.Overall the experience is fine."
+   		}
+   </script>
+</head>
+<body>
+<br><br>
+<div class="container" style="background-color: #D6F5FF; top-margin:10px;">
+	
+	<h3>Restaurant 1</h3>
+
+	<hr>
+	<button onclick="review()"> Click To view reviews: </button>
+	<table class="table table-hover">
+	<tbody>
+	<tr><td id="one"></td></tr>
+	<tr><td id="two"></td></tr>
+	<tr><td id="three"></td></tr>
+	<tr><td id="sort1"></td></tr>
+	<tr><td id="sort2"></td></tr>
+	<tr><td id="sort3"></td></tr>
+	</tbody>
+	</table>
+
+
+</div>
+
+</body>
+</html>
