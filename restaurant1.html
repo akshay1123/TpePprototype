@@ -12,6 +12,25 @@ a {
 .table th, .table td { 
      border-top: none !important; 
  }
+
+ #block1{
+ 	display: none;
+ }
+ #block2{
+ 	display: none;
+ }
+ #block3{
+ 	display: none;
+ }
+ #review1:hover + #block1{
+ 	display: block;
+ }
+ #review2:hover + #block2{
+ 	display: block;
+ }
+ #review3:hover + #block3{
+ 	display: block;
+ }
 </style>
 <head>
    <title>Prototype</title>
@@ -27,9 +46,9 @@ a {
    			document.getElementById("three").innerHTML = "<b>Review 3: </b><br>The food here is nice though ambience is nice. Service was on time.Overall the experience was nice.<br><button onclick='sort()'>Click to sort the above reviews</button>"
    		}
    		function sort(){
-   			document.getElementById("sort1").innerHTML = "<b>Review 1: [Our Rating: 4.5/5.0]</b><br>A very great ambience and joyful place. The management is superb and food Quality is awesome. It's the place that runs according to u in terms of food specially in the buffet genre. All starter items are awesome and main course, desserts are also fine. Overall a good place to have ur meal and enjoy with ur loved ones"
-   			document.getElementById("sort2").innerHTML = "<b>Review 3: [Our Rating: 3.9/5.0]</b><br>Awesome for the meat lover . The ambience was too good . The best part of AB's is its wish grill ,the different type of meat . I kept shark and squid in wish grill . Been there with my project team . I will say someone who is a hardcore meat lover please try it."
-   			document.getElementById("sort3").innerHTML = "<b>Review 2: [Our Rating: 1.0/5.0]</b><br>A copy of barbeque nation.Barbecue nation is much better than absolute barbeque . Food quality is ok over here.Wish grill is a marketing gimmick and yhe end result is a tasteless mix of veggies and sauces.Even the ice cream that they use on cold stone is of pathetic quality"
+   			document.getElementById("sort1").innerHTML = "<b id='review1'>Review 1: [Our Rating: 4.5/5.0]</b><p id='block1'>Food : 4.6<br>Ambience : 4.4<br> Service : 4.5</p><br>A very great ambience and joyful place. The management is superb and food Quality is awesome. It's the place that runs according to u in terms of food specially in the buffet genre. All starter items are awesome and main course, desserts are also fine. Overall a good place to have ur meal and enjoy with ur loved ones"
+   			document.getElementById("sort2").innerHTML = "<b id='review3'>Review 3: [Our Rating: 3.9/5.0]</b><p id='block3'>Food : 4.0<br>Ambience : 4.0<br> Service : 3.9</p><br>Awesome for the meat lover . The ambience was too good . The best part of AB's is its wish grill ,the different type of meat . I kept shark and squid in wish grill . Been there with my project team . I will say someone who is a hardcore meat lover please try it."
+   			document.getElementById("sort3").innerHTML = "<b id='review2'>Review 2: [Our Rating: 1.0/5.0]</b><p id='block2'>Food : 1.2<br>Ambience : 1.0<br> Service : 1.0</p><br>A copy of barbeque nation.Barbecue nation is much better than absolute barbeque . Food quality is ok over here.Wish grill is a marketing gimmick and yhe end result is a tasteless mix of veggies and sauces.Even the ice cream that they use on cold stone is of pathetic quality"
    		}
    </script>
 </head>
